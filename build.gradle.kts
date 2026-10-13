@@ -10,7 +10,7 @@ java {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:26.3.build.159-beta")
+    compileOnly("io.papermc.paper:paper-api:26.3.build.178-stable")
     testImplementation(platform("org.junit:junit-bom:6.1.3"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
