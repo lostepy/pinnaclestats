@@ -2,7 +2,7 @@
 
 All notable PinnacleStats changes are documented here. Historical entries are based on the published GitHub release notes and repository release history.
 
-## 1.1.0 - Unreleased
+## 1.1.0 - 2026-10-13
 
 ### Fixed
 
@@ -11,17 +11,17 @@ All notable PinnacleStats changes are documented here. Historical entries are ba
 
 ### Changed
 
-- Updated PinnacleStats for Paper 26.3 beta compatibility.
+- Updated PinnacleStats for Paper 26.3 compatibility.
 - Updated the plugin API declaration to Paper 26.3.
 - Updated the project and packaged plugin version to 1.1.0.
-- Updated user-facing documentation for Paper 26.3 beta and Java 25 requirements.
+- Updated user-facing documentation for Paper 26.3 and Java 25 requirements.
 - Verified the existing listener-registration ABI and supported vanilla statistics JSON categories remain compatible with Paper 26.3 beta.
 - Migrated `/pstats` from the obsolete Bukkit command executor/completer path to Paper 26.3 `BasicCommand` registration while preserving subcommands, permissions, and tab completion ([#35](https://github.com/mccreeper1318/pinnaclestats/issues/35)).
 - Updated the release workflow to build published prereleases from their tag version, including versions such as `1.1.0-beta.1`, while keeping normal development builds on the configured project version.
 
 ### Dependencies
 
-- Updated `io.papermc.paper:paper-api` from `26.2.build.121-stable` to `26.3.build.159-beta`.
+- Updated `io.papermc.paper:paper-api` from `26.2.build.121-stable` to `26.3.build.178-stable`.
 - Updated `actions/setup-java` from `5` to `6` via Dependabot ([#28](https://github.com/mccreeper1318/pinnaclestats/pull/28)).
 - Updated `gradle-wrapper` from `9.7.1` to `9.8.0` via Dependabot ([#41](https://github.com/mccreeper1318/pinnaclestats/pull/41)).
 
