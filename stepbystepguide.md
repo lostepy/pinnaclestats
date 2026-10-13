@@ -36,7 +36,7 @@ Start with the common installation steps below. After they work, continue to the
 
 Make sure you have:
 
-1. A Paper 26.3 server supported by the PinnacleStats release. PinnacleStats 1.1.0 targets Paper 26.3; while Paper 26.3 remains in beta, use a Paper 26.3 beta build or a newer compatible 26.3 release.
+1. A Paper 26.3 stable server supported by the PinnacleStats release. PinnacleStats 1.1.0 targets Paper 26.3.
 2. Java 25.
 3. Access to the server files through a hosting control panel, file manager, SFTP client, or the server computer.
 4. Permission to stop and start the Minecraft server.
