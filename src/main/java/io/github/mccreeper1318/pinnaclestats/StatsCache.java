@@ -213,6 +213,9 @@ public final class StatsCache {
         long deaths = getLong(custom, "minecraft:deaths");
         long mobKills = getLong(custom, "minecraft:mob_kills");
         long playerKills = getLong(custom, "minecraft:player_kills");
+        long blocksMined = mined.values().stream()
+        .mapToLong(value -> value instanceof Number number ? number.longValue() : 0L)
+        .sum();
         long jumps = getLong(custom, "minecraft:jump");
         long animalsBred = getLong(custom, "minecraft:animals_bred");
         long fishCaught = getLong(custom, "minecraft:fish_caught");
@@ -244,6 +247,7 @@ public final class StatsCache {
         summary.put("playtime", formatDuration(seconds));
         summary.put("playtimeSeconds", seconds);
         summary.put("playtimeHours", round(seconds / 3600.0, 1));
+        summary.put("blocksMined", blocksMined);
         if (cfg.includeDeaths()) summary.put("deaths", deaths);
         summary.put("mobKills", mobKills);
         if (cfg.includePlayerKills()) summary.put("playerKills", playerKills);
